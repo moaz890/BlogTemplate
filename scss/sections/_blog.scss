@@ -1,0 +1,36 @@
+@use "../custom" as *;
+
+.blog {
+    z-index: 100;
+    margin-top: 15rem;
+    position: relative;
+    
+    &__container {
+        background-color: $gray-100;
+        padding: 1.5rem 2.375rem;
+        border-radius: 0.435rem;
+        position: relative;
+
+        box-shadow: 0 0 2rem 0px #868383;
+
+        @include media-breakpoint-up(lg){
+            padding: 3rem 4.785rem;
+        }
+    }
+
+    &--conclusion {
+        color: $gray-600;
+
+        a {
+            color: inherit;
+            transition: 0.3s;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    &--date{
+        position: relative;
+    }
+}

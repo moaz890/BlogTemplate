@@ -1,0 +1,44 @@
+@use "../custom" as *;
+
+.footer {
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+
+    p{
+        font-size: 0.938rem;
+        color: $gray-600;
+
+        a{
+            color: $gray-800;
+            text-decoration: none;
+
+            &:nth-child(2){
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+}
+
+.list-inline {
+    list-style-type: none;
+    display: block;
+    margin: auto;
+    li{
+        display: inline-block;
+        margin-left: 0.75rem;
+
+        a{
+            font-size: 1.375rem;
+            color: $gray-600;
+
+            &:hover {
+                color: $primary;
+                transition: 0.5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@use "../custom" as *;
+
+.display-3{
+    font-size: 2rem;
+    
+}
+.display-4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+
+    a{
+        color: $black;
+        text-decoration: none;
+        transition: all 0.4s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+        font-size: 2.775rem;
+        font-weight: 400;
+    }
+}
+.display-2 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.mobile-only {
+    display: none;
+    @include media-breakpoint-up(lg){
+        display: block;
+    }
+}
+
+.separator{
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem;
+    bottom: 0;
+    width: 2px;
+    background-color: $gray-400;
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 1rem;
+        height: 0.938rem;
+        width: 0.938rem;
+        background-color: $primary;
+        border-radius: 50%;
+        z-index: 1000;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

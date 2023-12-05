@@ -1,0 +1,41 @@
+@use '../custom' as *;
+
+
+.navbar{
+    font-weight: 600;
+    padding: 1.575rem 0;
+
+    li{
+        position: relative;
+        a {
+            border-radius: 0.25rem;
+            &:hover{
+                background-color: $secondary;
+            }
+        }
+    }
+    &__child-list {
+        left: 0;
+        top: 100%;
+        padding: 0;
+        
+        li {
+            &:hover{
+                a {
+                    
+                    color: $white;
+                    background-color: $black;
+                    
+                }
+            }
+        }
+    }
+}
+.landing {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $primary;
+    height: 20rem;
+}
